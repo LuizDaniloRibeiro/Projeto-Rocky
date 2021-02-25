@@ -101,17 +101,13 @@ section{
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 26px;
     height: 330vh;
     background-size: cover;
     background-position: center center;
 }
 
-section p{
-    font-size: 12px;
-    font-family: 'Montserrat' sans-serif;
-    color: #868686;
-}
+
 
 section .container{
     width: 90%;
@@ -119,48 +115,171 @@ section .container{
     margin: 20px auto;
 }
 
+section .container h4{
+    color: #eFe60b;
+    font-size: 16px;
+}
 
 /*======= SOBRE ======*/
 
 .titulo-sobre{
-    font-size: 32px;
     padding-top: 50px;
 }
 
-
+.card-sobre p{
+    display:block;
+    font-size: 16px;
+    font-family: 'Arial' sans-serif;
+    font-family: #000000; 
+}
 
 .card-sobre{
-    width: 800px;
+    width: 700px;
+    height: 300px;
     margin-top: 0;
     margin-bottom: 5.5rem;
     position: relative;
     padding: 2rem;
     background: #fff;
-    -webkit-box-shadow: 8px 8px 48px 0 rgba(12, 10, 10, 0.445);
-    box-shadow: 8px 8px 48px 0 rgba(12, 10, 10, 0.15);
+    -webkit-box-shadow: 8px 8px 48px 0 rgba(12, 10, 10, 0.246);
+    box-shadow: 8px 8px 48px 0 rgba(12, 10, 10, 0.246);
 }
 
 
 /*======== SERVIÇO ========*/
 
-.card-servico1{
-    display: grid;
-    grid-template-columns: 300px;
-    grid-auto-rows: 100px 100px 80px;
-    font-family: 'Arial' sans-serif;
-    border-radius: 8px;
-    background: #1DC2D5;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    text-align: center;
-    width: 350px;
-    height: 60vh;
+/*CARD 1*/
+.card-servicos1{
+    font-size: 12px;
     background: url(/img/s3\ ft1.png);
-    background-size: cover;
-    background-position: center center;
+   
+    background-repeat: no-repeat;
+    background-size:339px 473px;
+    width: 336px;
+    height: 470px;
+    border-radius: 50px;    
+}
+
+/*DESCRIÇÃO SERVE PARA OS 3 CARD*/
+.servico-descricao{
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 16px;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+}
+
+
+/*CARD 2*/
+.card-servicos2{
+    
+    font-size: 12px;
+    background: url(/img/s3\ ft2.png);
+   
+    background-repeat: no-repeat;
+    background-size:339px 473px;
+    width: 336px;
+    height: 470px;
+    border-radius: 50px;
+    
+}
+
+/*CARD 3*/
+.card-servicos3{   
+    font-size: 12px;
+    background: url(/img/s3\ ft3.png);
+   
+    background-repeat: no-repeat;
+    background-size:339px 473px;
+    width: 336px;
+    height: 470px;
+    border-radius: 50px;
+    
+}
+
+
+/*SEPARANDO AS DIV*/
+#container-a{
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 60px;
+}
+
+#container-b{
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+#container-c{
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+
+#container-d{
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 60px;
+}
+
+#container-e{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#container-f{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+    
 }
 
 
 
+
+
+/*DIFERENCIAIS*/
+.card-diferenciais1{
+    font-size: 12px;
+    background: url(/img/s4\ ft1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size:234px 515px; */
+    width: 234px;
+    height: 500px;
+    border-radius: 50px;    
+}
+
+.card-diferenciais2{
+    font-size: 12px;
+    background: url(/img/s4\ ft2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size:234px 515px; */
+    width: 234px;
+    height: 500px;
+    border-radius: 50px;    
+}
+
+.card-diferenciais3{
+    font-size: 12px;
+    background: url(/img/s4\ ft3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size:234px 515px; */
+    width: 234px;
+    height: 500px;
+    border-radius: 50px;    
+}
 
 
 
@@ -168,5 +287,4 @@ section .container{
 /* ======== RODAPÉ DO SITE ========*/
 footer{
     background: #000000;
-    color: #ffffff;
 }
