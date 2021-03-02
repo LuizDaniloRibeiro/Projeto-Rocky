@@ -1,2 +1,9 @@
 # Projeto-Rocky
- Teste pratico SEO 
+ Processo seletivo
+ 
+ Teste Prático SEO
+ 
+ DEV (desenvolvimento) SEO
+
+ # Agradecimentos
+ Rocky Full Digital Performance
