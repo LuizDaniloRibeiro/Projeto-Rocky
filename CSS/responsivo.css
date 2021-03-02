@@ -7,19 +7,54 @@
         height: 100%;
     }
 
+    header .cabecalho{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin: 0px;
+    }
+
+    h1 .cabecalho{
+        font-size: 12px;
+    }
+
+    .cabecalho .titulo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .cabecalho .descricao{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .botao{
+        display: none;
+        
+    }
+
 
 
     section {
         width: 100%;
         height: 100%;
         background: none;
+        padding: 0px;
+        
     }
 
     section .container{
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100;
+        height: 100%;
     }
 
     section .card-sobre{
@@ -27,14 +62,15 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        padding: 0;
+        padding: 0px;
     }
 
     
 
-    section .card-diferenciais1{
+    .card-servicos1{
         display: flex;
         flex-direction: column;
+        
         
     }
 
@@ -54,11 +90,11 @@
         
     }
     
-
-
-
-    
-   
-
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
 
 }

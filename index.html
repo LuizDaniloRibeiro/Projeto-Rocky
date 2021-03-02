@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
 
+    <!--Rodape-->
+    <link rel="stylesheet" href="/CSS/rodape.css">
+
     <!--Responsividade-->
     <link rel="stylesheet" href="/CSS/responsivo.css">
     <link rel="stylesheet" href="/CSS/menu.css">
 
     <title>Rocky Web</title>
 </head>
+
 <body>
 
-    <!--CABEÇALHO-->
+<!-----CABEÇALHO----->
     <header>
         <div class="container">
             <img src="/img/logo.png" alt="" class="logo">
@@ -36,9 +40,10 @@
                     <h1 class="titulo">FULL DIGITAL</h1>
                     <h1 class="titulo">PERFORMANCE</h1>
                     <p class="descricao">Identificou que o digital <span class="amarelo">é onde sua empresa pode crescer,</span>  </br> mas ainda não sabe qual agência é especialista?</p>
-                    <div class="botoes">
-                    <button type="button"           class="botao">ENTRE EM CONTATO AGORA</button>
-                    </div>
+                    
+                    
+                    <button type="button" class="botao efeito">ENTRE EM CONTATO AGORA</button>
+                    
             </div>
         </div>
     </header>
@@ -66,7 +71,7 @@
                     <p>&nbsp;</p><p>&nbsp;</p>
 
                     <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum consequuntur cum. Numquam eaque molestiae, sit ullam sunt illum libero repellendus nam incidunt perferendis modi facere! Dolor nulla praesentium necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deserunt consequuntur repellat molestiae harum libero suscipit itaque iste. Veritatis sapiente asperiores alias reiciendis nihil id laborum nisi quod fugiat eveniet!
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum consequuntur cum. Numquam eaque molestiae, sit ullam sunt illum libero repellendus nam incidunt perferendis modi facere! 
                     </p>
                 </div>
 
@@ -171,12 +176,15 @@
 
                     <div class="media"><!--Media-->
                         <img src="/img/logo.png" alt="img" style="width: 120px;">
-                        <i class="fab fa-facebook"></i>
                     </div>
 
                     <div class="informacao"><!--Informação-->
-                        <p>contato@rock.ag  |   (15) 32211105</p><br>
-                        <p>R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP, 18047-410 , 2º andar</p>
+                        <p> <i class="fas fa-envelope" style="color: #eFe60b;"></i> contato@rock.ag
+
+                            <i class="fas fa-phone-alt" style="text-indent: 2rem; color: #eFe60b;" ></i> (15) 32211105
+                        </p><br><br>
+
+                        <p><i class="fas fa-map-marker-alt" style="color: #eFe60b;"></i> R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP, 18047-410 , 2º andar</p>
                     </div>
 
                     <div class="descricao"><!--Descricao-->
@@ -197,17 +205,17 @@
             <div class="div2" id="div-b">
                 <div class="form">
                     <form action="form">
-                        <input class="field" placeholder="Nome" type="text"><br>
-                        <input class="field" placeholder="E-mail" type="text"><br>
+                        <input class="field" placeholder="Nome" id="nome" type="text" required maxlength="25"><br>
+                        <input class="field" placeholder="E-mail" id="email" type="text" required maxlength="50"><br>
                         <select class="field"><br>
-                            <option value="">Investimento  mensal em Mídia Online</option>
-                            <option value="">De R$ 40.000,00 a R$100.000,00</option>
-                            <option value="">Entre R$ 100.001,00 a R$ 200.000,00</option>
-                            <option value="">Acima de R$ 200.001,00</option>
+                            <option value="0">Investimento  mensal em Mídia Online</option>
+                            <option value="1">De R$ 40.000,00 a R$100.000,00</option>
+                            <option value="2">Entre R$ 100.001,00 a R$ 200.000,00</option>
+                            <option value="3">Acima de R$ 200.001,00</option>
                         </select>
-                        <textarea class="field" name="mesage" placeholder="Mensagem"></textarea><br>
+                        <textarea class="field" name="mesage" placeholder="Mensagem" id="area" cols="10" rows="30" required maxlength="100"></textarea><br>
                         
-                        <input class="field" type="button" id="btn-form" onclick="Enviar()" value="ENVIAR MENSAGEM"><br>
+                        <button type="button" class="btn efeito" onclick="Enviar()">ENVIAR MENSAGEM</button>
 
                     </form>
                 </div>

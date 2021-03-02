@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 *{
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
 
@@ -16,11 +16,6 @@ body{
 /* ======== CABEÇA DO SITE ========*/
 
 
-
-
-
-
-/*==========/==========*/
 
 .cabecalho{
     margin-left: 25%;
@@ -46,37 +41,81 @@ body{
     font-size: 16px;
     margin-top: 50px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*BOTÃO*/
 
-.cabecalho .botao{
-    font-size: 18px;
-    text-decoration: none;
-    background-color: #1DC2D5;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #ffffff;
+.botao{
+    text-align: center;
     margin-top: 50px;
-    border-radius: 50px;
-    transition: .3s ease-in-out;
-    cursor: pointer;
     border: none;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
 }
 
-.botao{
-    background-color: #ffffff;
-    color: #1DC2D5;
+.efeito{
+    background-color: #1DC2D5;
 }
+
+.efeito:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    transition: all 2s ease;
+}
+
+.efeito:hover:before{
+    width: 100%;
+}
+
+
 
 
 /* ======== CORPO DO SITE ========*/
 
+header{
+    width: 100%;
+    height: 130vh;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.219), rgba(0,0,0,.219)), url(/img/s1\ ft1.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    width:150px;
+}
+
+
 section{
     background-image: url(/img/bg.png);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #000000;
     font-weight: 600;
     font-size: 30px;
@@ -99,6 +138,12 @@ section .container h4{
     font-size: 16px;
 }
 
+section .container h2{
+   font-size: 32;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
 /*======= SOBRE ======*/
 
 
@@ -109,7 +154,7 @@ section .container h4{
 .card-sobre p{
     display:block;
     font-size: 15px;
-    font-family: 'Arial' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 5px;
     color: rgb(128, 126, 126);
     
@@ -145,7 +190,7 @@ section .container h4{
 
 /*DESCRIÇÃO SERVE PARA OS 3 CARD*/
 .servico-descricao{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     text-align: center;
     padding-top: 55px;
@@ -265,103 +310,3 @@ section .container h4{
 
 
 
-/* ======== RODAPÉ DO SITE ========*/
-
-
-
-footer{
-    background: #000000;
-}
-
-.faixa-amarela{
-    background-color: #eFe60b;
-    height: 50px;
-}
-
-/*SEPARANDO AS DIV*/
-#div-a{
-    display: inline-block;
-    
-}
-
-#div-b{
-    display: inline-block;
-    /* background-color: darkcyan;   */
-}
-
-.div1{
-    width: 500px;
-    height: 0vh;
-    margin-inline-start: 55px;
-    margin-inline-end: 55px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
-.div2{
-    width: 500px;
-    height: 100vh;
-    margin-inline-start: 55px;
-    margin-inline-end: 55px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    
-}
-
-.pag-amarelo{
-    color: #eFe60b;
-}
-
-.pag-azul{
-    color: #1DC2D5;
-}
-
-
-.informacao{
-    margin-top: 50px;
-    font-size: 12px;
-}
-
-.descricao{
-    margin-top: 50px;
-    font-size: 16px;
-}
-
-/*=== FORMULARIO ===*/
-.form{
-    flex-direction: column;
-  
-}
-
-.field{
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    max-width: 100%;
-    min-width: 100%;
-    
-
-}
-
-textarea{
-    height: 150px;
-}
-
-
-
-#btn-form{
-    background-color: #1DC2D5;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-    text-transform: none;
-    cursor: pointer;
-}

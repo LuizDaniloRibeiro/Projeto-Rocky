@@ -1,0 +1,153 @@
+/* ======== RODAPÉ DO SITE ========*/
+
+
+footer{
+    background-color:#000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faixa-amarela{
+    background-color: #eFe60b;
+    height: 50px;
+}
+
+/*SEPARANDO AS DIV*/
+#div-a{
+    display: inline-block;
+    
+}
+
+#div-b{
+    display: inline-block;
+    /* background-color: darkcyan;   */
+}
+
+.div1{
+    width: 500px;
+    height: 0vh;
+    margin-inline-start: 55px;
+    margin-inline-end: 55px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.div2{
+    width: 500px;
+    height: 100vh;
+    margin-inline-start: 55px;
+    margin-inline-end: 55px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    
+}
+
+.pag-amarelo{
+    color: #eFe60b;
+}
+
+.pag-azul{
+    color: #1DC2D5;
+}
+
+
+.informacao{
+    margin-top: 50px;
+    font-size: 12px;
+    
+}
+
+.descricao{
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/*=== FORMULARIO ===*/
+.form{
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #4E4C4A;
+    color: #1DC2D5;
+    margin: auto;
+    padding: 25px;
+    flex-direction: column;
+  
+}
+
+.field{
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-box-shadow: 8px 8px 48px 0 rgba(12, 10, 10, 0.246);
+    box-shadow: 8px 8px 48px 0 rgba(12, 10, 10, 0.246);
+    
+
+}
+
+input:focus{
+    border-color: #1DC2D5 !important;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+    color: green;
+}
+
+
+
+textarea{
+    height: 150px;
+}
+
+
+
+.btn{
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    line-height: 20px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito{
+    background-color: #1DC2D5;
+}
+
+.efeito:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    transition: all 2s ease;
+}
+
+.efeito:hover:before{
+    width: 100%;
+}
